@@ -1,0 +1,28 @@
+[
+    {
+    "name": "Men T-shirt",
+    "price": "30.99",
+    "image": "/tshirt-img.png"
+    },
+    {
+        "name": "Women Shirt",
+        "price": "20.99",
+        "image": "/women-clothes-img.png"
+        },
+    {
+            "name": "Men Shirt",
+            "price": "30.99",
+            "image": "/dress-shirt-img.png"
+     },
+     {
+        "name": "Women Dress",
+        "price": "35.99",
+        "image": "/women-clothes-img.png"
+        },
+        {
+            "name": "Men T-shirt",
+            "price": "50.99",
+            "image": "/tshirt-img.png"
+            }
+]
+
