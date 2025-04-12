@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './Pages/Home.jsx'
 import Shop from './Components/Shop.jsx'
+import Footer from './Components/Footer.jsx'
 
 let heroList =[
   {text1: 'GET STARTED ON',   text2: 'YOUR COZY SHOPPING'},
@@ -22,6 +23,7 @@ const App = () => {
          </>}/>
         
       </Routes>
+      <Footer/>
     </Router>
   )
 }

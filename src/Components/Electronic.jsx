@@ -1,16 +1,14 @@
 import React from 'react'
-import data from '../Slider.json'
+import data from './Electronic.json'
 import {Swiper,SwiperSlide, useSwiper} from 'swiper/react'
 import 'swiper/css'
-import Electronic from './Electronic.jsx'
-import Jewel from './Jewel.jsx'
-const Shop = () => {
+
+const Electronic = () => {
   return (
-    <div id='Fashion' className='px-4 md:px-20 lg:px-30 mx-auto justify-center items-center'>
-        <h2 className='text-center mx-auto font-bold overflow-hidden pt-2 w-full text-5xl'>Man & Woman Fashion</h2>
-     
-       
-       <Swiper  className='px-4 min-h-screen py-20 md:px-20 lg:px-30'
+    <div id='Electronic'>
+         <h2 className='text-center mx-auto font-bold overflow-hidden pt-2 w-full text-5xl'>Electronics</h2>
+
+         <Swiper  className='px-4 min-h-screen py-20 md:px-20 lg:px-30'
        spaceBetween={40}
        breakpoints={{
         640: {
@@ -42,25 +40,22 @@ const Shop = () => {
         }
         <SliderButton/>
        </Swiper>
-       <Electronic/>
-       <Jewel/>
-       
     </div>
   )
 }
 
-export default Shop
+export default Electronic
 
 const SliderButton=()=>{
-  const swiper = useSwiper()
-  return(
-    <div className='flex w-full justify-center space-x-2 items-center mx-auto py-12'>
+    const swiper = useSwiper()
+    return(
+        <div className='flex w-full justify-center space-x-2 items-center mx-auto py-12'>
 
-     <div className='px-2 py-2 transition duration-700 ease-in-out hover:bg-orange-700 bg-black'><img  onClick={()=>swiper.slidePrev()}
-      className='cursor-pointer filter invert   ' src="./less-than.png" alt="" /></div>
-
-     <div className='px-2 py-2  transition duration-700 ease-in-out hover:bg-orange-700 bg-black'><img onClick={()=>swiper.slideNext()}
-      className='cursor-pointer  filter invert ' src="./more-than.png" alt="" /></div>
-    </div>
-  )
+        <div className='px-2 py-2 transition duration-700 ease-in-out hover:bg-orange-700 bg-black'><img  onClick={()=>swiper.slidePrev()}
+         className='cursor-pointer filter invert   ' src="./less-than.png" alt="" /></div>
+   
+        <div className='px-2 py-2  transition duration-700 ease-in-out hover:bg-orange-700 bg-black'><img onClick={()=>swiper.slideNext()}
+         className='cursor-pointer  filter invert ' src="./more-than.png" alt="" /></div>
+       </div>
+    )
 }

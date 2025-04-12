@@ -12,7 +12,7 @@ const Home = ({heroList,heroText,setHeroText}) => {
   const[showSidebar, setShowSidebar]= useState(false)
   
   return (
-    <div  className=" relative min-h-screen overflow-hidden justify-center  bg-center bg-fixed  bg-no-repeat bg-cover py-4 items-center mx-auto" style={{backgroundImage: "url('./banner-bg.png')" }}>
+    <div id='Home'  className=" relative min-h-screen overflow-hidden justify-center  bg-center bg-fixed  bg-no-repeat bg-cover py-4 items-center mx-auto" style={{backgroundImage: "url('./banner-bg.png')" }}>
         <Navbar/>
         <h2 className='w-full text-center text-4xl text-white pt-6 font-bold'>D-Answer</h2>
         <Hero showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
@@ -28,15 +28,15 @@ const Home = ({heroList,heroText,setHeroText}) => {
       </div> 
       <button className='px-12 py-3 bg-black rounded text-white cursor-pointer hover:bg-orange-700 transition ease-in-out duration-700 flex justify-center mx-auto z-19 mt-30 md:mt-25 lg:mt-20'>BUY NOW</button>
       </div>
-      <div className={`absolute ${showSidebar? '' : '-translate-x-80 ease-in-out transition duration-700'} font-semibold top-0 text-xl pt-20 pl-10 space-y-5 flex flex-col text-white  bottom-0 left-0 w-76  z-90 transition-all ease-in-out bg-black`}>
+      <div className={`fixed ${showSidebar? '' : '-translate-x-80 ease-in-out transition duration-700'} font-semibold top-0 text-xl pt-20 pl-10 space-y-5 flex flex-col text-white  bottom-0 left-0 w-76  z-90 transition-all ease-in-out bg-black`}>
        
-       <Link to='/' className='hover:text-orange-700'>Home</Link>
-       <Link  className='hover:text-orange-700'>Fashion</Link>
-       <Link  className='hover:text-orange-700'>Electronic</Link>
-       <Link  className='hover:text-orange-700'>Jewellery</Link>
+       <a href='#Home' to='/' className='hover:text-orange-700'>Home</a>
+      <a href="#Fashion" className='hover:text-orange-700'>Fashion</a> 
+       <a href='#Electronic' className='hover:text-orange-700'>Electronic</a>
+       <a  className='hover:text-orange-700'>Jewellery</a>
       </div>
       
-      <img src="./cross-desktop.png" onClick={()=>setShowSidebar(false)} className={`absolute z-90 top-5 left-51 filter ${showSidebar? '' : 'hidden'} invert object-contain  w-8 cursor-pointer`} alt="" />
+      <img src="./cross-desktop.png" onClick={()=>setShowSidebar(false)} className={`fixed z-90 top-5 left-51 filter ${showSidebar? '' : 'hidden'} invert object-contain  w-8 cursor-pointer`} alt="" />
 
       
     </div>

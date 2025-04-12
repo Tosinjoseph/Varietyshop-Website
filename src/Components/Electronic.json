@@ -1,0 +1,28 @@
+[
+    {
+    "name": "Laptop",
+    "price": "310.99",
+    "image": "/laptop-img.png"
+    },
+    {
+        "name": "Mobile",
+        "price": "230.99",
+        "image": "/mobile-img.png"
+        },
+    {
+            "name": "Computer",
+            "price": "300.99",
+            "image": "/computer-img.png"
+     },
+     {
+        "name": "Laptop",
+        "price": "315.99",
+        "image": "/laptop-img.png"
+        },
+        {
+            "name": "Mobile",
+            "price": "100.99",
+            "image": "/mobile-img.png"
+            }
+]
+
