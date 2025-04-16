@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Components/Navbar.jsx'
 import Hero from '../Components/Hero.jsx';
 import { Link } from 'react-router-dom';
@@ -10,6 +10,14 @@ import { CgCalendarNext, CgMenuRight } from 'react-icons/cg';
 
 const Home = ({heroList,heroText,setHeroText}) => {
   const[showSidebar, setShowSidebar]= useState(false)
+  useEffect(()=>{
+    if(showSidebar){
+      document.body.style.overflow = 'hidden'
+    }
+    else{
+      document.body.style.overflow = 'auto'
+    }
+  },[showSidebar])
   
   return (
     <div id='Home'  className=" relative min-h-screen overflow-hidden justify-center  bg-center bg-fixed  bg-no-repeat bg-cover py-4 items-center mx-auto" style={{backgroundImage: "url('./banner-bg.png')" }}>
@@ -33,7 +41,7 @@ const Home = ({heroList,heroText,setHeroText}) => {
        <a href='#Home' to='/' className='hover:text-orange-700'>Home</a>
       <a href="#Fashion" className='hover:text-orange-700'>Fashion</a> 
        <a href='#Electronic' className='hover:text-orange-700'>Electronic</a>
-       <a  className='hover:text-orange-700'>Jewellery</a>
+       <a href='#Jewel' className='hover:text-orange-700'>Jewellery</a>
       </div>
       
       <img src="./cross-desktop.png" onClick={()=>setShowSidebar(false)} className={`fixed z-90 top-5 left-51 filter ${showSidebar? '' : 'hidden'} invert object-contain  w-8 cursor-pointer`} alt="" />

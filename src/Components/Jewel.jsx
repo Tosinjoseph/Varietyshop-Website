@@ -5,8 +5,8 @@ import 'swiper/css'
 
 const Jewel = () => {
   return (
-    <div>
-        <h2 className='text-center pb-4 mx-auto font-bold overflow-hidden pt-2 w-full text-5xl'>Man & Woman Fashion</h2>
+    <div id='Jewel'>
+        <h2 className='text-center pb-4 mx-auto font-bold overflow-hidden pt-2 w-full text-5xl'>Jewelleries</h2>
      
        
      <Swiper  className='px-4 min-h-screen py-20 md:px-20 lg:px-30'

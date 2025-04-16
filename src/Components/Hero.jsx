@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import {  CgProfile } from "react-icons/cg";
+import { Link } from 'react-router-dom';
 
 
 const Hero = ({showSidebar,setShowSidebar}) => {
@@ -44,7 +45,7 @@ const Hero = ({showSidebar,setShowSidebar}) => {
               </div>
         
         <div className='text-white text-xl gap-2 items-center flex font-semibold mt-4 mx-auto'>
-          <AiOutlineShoppingCart className=''/>
+         <Link to='/cart'><AiOutlineShoppingCart className=''/></Link>
           <h3>CART</h3>
           <CgProfile className='' />
           <h3>USER</h3>

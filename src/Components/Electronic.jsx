@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import data from './Electronic.json'
 import {Swiper,SwiperSlide, useSwiper} from 'swiper/react'
 import 'swiper/css'
+import { setProductse } from '../Redux/electronicSlice'
+import { useDispatch, useSelector } from 'react-redux'
 
 const Electronic = () => {
+  const products = useSelector(state=> state.electronic)
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    dispatch(setProductse(data))
+  },[])
   return (
     <div id='Electronic'>
          <h2 className='text-center mx-auto font-bold overflow-hidden pt-2 w-full text-5xl'>Electronics</h2>
@@ -23,7 +30,7 @@ const Electronic = () => {
       }}
         >
         {
-        data.map((item, i)=>(
+        products.productse.map((item, i)=>(
             <SwiperSlide key={i} className=' justify-center items-center mt-10'>
              <div className='bg-white mt-12   rounded-sm shadow-2xl h-140  '>
                 <h3 className='text-2xl pt-4 font-bold text-center'>{item.name}</h3>

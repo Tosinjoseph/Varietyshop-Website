@@ -1,12 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is an e-commerce website with a captivating and user friendly UI, where customers can take a clear glimpse of the wares available in stock and make their choices. But unlike most e-commerce websites, The products here are displayed in slides rather than multi-rows and culumns grid. I specifically used that so that I can leverage on this avenue to practice various concepts all at once. So Swiperslide dependencies was used for the sliding features in the displayed products. And customers can add their chosen products to cart which could be subsequently checked out for shipping. Its still a work in progress and I have been able to not only learn new things with this project but also practice effectively with what I have already learnt. It will be on vercel. Thanks for reading.
