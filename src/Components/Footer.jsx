@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const Footer = () => {
   const Navigate = useNavigate()
   return (
-    <div className='px-4 md:px-25 h-140 md:h-100 pb-6 lg:px-30 justify-center pt-12 items-center mx-auto bg-black'>
+    <div className='px-4 md:px-25 h-145 md:h-105 pb-6 lg:px-30 justify-center pt-12 items-center mx-auto bg-black'>
         <h2 className='w-full text-center text-4xl text-white pt-6 font-bold'>D-Answer</h2>
         <div className='w-2/3 flex justify-center relative mx-auto items-center '>
            <div className='w-full  border  border-b-white    flex mt-12 h-6 justify-center mx-auto'>
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <h3 className='text-white text-center text-xl'>Help Line : +2349070217736</h3>
         <h3 className='text-white text-center text-xl mt-3'>2025 All Right Reserved. Coded by Tosin Joseph</h3>
-        <p className='text-white text-center cursor-pointer' onClick={()=>Navigate('/')}>Home</p>
+        <p className=' font-bold py-4 md:py-1 text-orange-700 text-center cursor-pointer' onClick={()=>Navigate('/')}>Home</p>
         
     </div>
   )

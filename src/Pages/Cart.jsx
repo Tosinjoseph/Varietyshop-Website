@@ -30,7 +30,7 @@ const Cart = () => {
                   ))}
                   </div>
                   : <div>
-                    <h3>Your Cart is Empty</h3>
+                    <h3 className='text-center text-3xl text-red-700 py-40'>Your Cart is Empty!</h3>
                   </div> }
     </div>
   )

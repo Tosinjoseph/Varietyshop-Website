@@ -5,6 +5,7 @@ import Home from './Pages/Home.jsx'
 import Shop from './Components/Shop.jsx'
 import Footer from './Components/Footer.jsx'
 import Cart from './Pages/Cart.jsx'
+import Store from './Pages/Store.jsx'
 
 let heroList =[
   {text1: 'GET STARTED ON',   text2: 'YOUR COZY SHOPPING'},
@@ -23,6 +24,7 @@ const App = () => {
           <Shop/>
          </>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/store' element={<Store/>}/>
       </Routes>
       <Footer/>
     </Router>

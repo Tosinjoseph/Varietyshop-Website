@@ -10,7 +10,7 @@ import { addToCart } from '../redux/cartSlice.jsx'
 
 
 const Shop = () => {
-  const products = useSelector(state=> state.product)
+  const products = useSelector(state=> state.product.products)
   const dispatch = useDispatch();
   useEffect(()=>{
     dispatch(setProducts(data))
@@ -44,7 +44,7 @@ const Shop = () => {
       }}
         >
         {
-        products.products.map(((product)=>(
+        products.map(((product)=>(
             <SwiperSlide  className=' justify-center items-center mt-10'>
              <div className='bg-white mt-12   rounded-sm shadow-2xl h-140  '>
                 <h3 className='text-2xl pt-4 font-bold text-center'>{product.name}</h3>
